@@ -1,7 +1,10 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+#[macro_export]
+macro_rules! match_any {
+    ( $match_expr:expr , $( $pat:pat )|+ => $expr:expr ) => {
+        match $match_expr {
+            $(
+                $pat => $expr,
+            )+
+        }
+    };
 }

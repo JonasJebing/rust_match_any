@@ -1,5 +1,5 @@
 [package]
-name = "match_each"
+name = "match_any"
 version = "0.1.0-dev"
 authors = ["Jonas Jebing <noreply.jonas.8049@protonmail.com>"]
 edition = "2018"
