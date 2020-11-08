@@ -3,6 +3,16 @@ name = "match_any"
 version = "0.1.0-dev"
 authors = ["Jonas Jebing <noreply.jonas.8049@protonmail.com>"]
 edition = "2018"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = """
+Provides a declarative macro, that matches an expression to any of the patterns
+and executes the same expression arm for any match.
+"""
+repository = "https://github.com/JonasJebing/rust_match_any"
+documentation = "https://docs.rs/match_any/"
+keywords = ["match", "any", "enum", "dispatch", "macro"]
+categories = ["no-std", "rust-patterns"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
