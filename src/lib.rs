@@ -1,3 +1,5 @@
+#![no_std]
+
 /// Matches an expression to any of the patterns and executes the same expression arm for any match.
 ///
 /// This macro allows you to use the same expression arm for different types
