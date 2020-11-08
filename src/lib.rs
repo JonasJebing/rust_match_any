@@ -23,10 +23,10 @@
 /// ```
 #[macro_export]
 macro_rules! match_any {
-    ( $expr:expr , $( $pat:pat )|+ => $expr_arm:expr ) => {
+    ( $expr:expr , $( $( $pat:pat )|+ => $expr_arm:expr ),+ ) => {
         match $expr {
             $(
-                $pat => $expr_arm,
+                $( $pat => $expr_arm, )+
             )+
         }
     };
