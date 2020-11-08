@@ -18,6 +18,13 @@ let int: i64 = match_any!(result, Ok(i) | Err(i) => i.into()); // compiles just 
 assert_eq!(int, 42);
 ```
 
+## Install
+
+```toml
+[dependencies]
+match_any = "1"
+```
+
 ## Examples
 
 ```rust
@@ -71,3 +78,20 @@ assert_eq!(int_id_kind.int_id(), 32); // enum dispatch
 let int_id_box: Box<dyn IntId> = Box::new(0_u32);
 assert_eq!(int_id_box.int_id(), 32); // dynamic dispatch
 ```
+
+## License
+
+This project is licensed under either of
+
+ * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or
+   http://www.apache.org/licenses/LICENSE-2.0)
+ * MIT license ([LICENSE-MIT](LICENSE-MIT) or
+   http://opensource.org/licenses/MIT)
+
+at your option.
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in code_location by you, as defined in the Apache-2.0 license, shall be
+dual licensed as above, without any additional terms or conditions.
